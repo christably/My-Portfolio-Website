@@ -331,6 +331,62 @@ nav {
     width: 100%;
 }
 
+
+/* Wavy Navigation Style for Experience and Contact - Pink with Red Hover */
+
+/* Base styles for the wavy nav items */
+.nav-links li.wavy-item a {
+  background: linear-gradient(135deg, #FF69B4, #FF1493);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 10px rgba(255, 20, 147, 0.3);
+  font-weight: 600;
+  z-index: 1;
+}
+
+/* Wavy effect with pseudo-element */
+.nav-links li.wavy-item a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.2) 25%, 
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    rgba(255, 255, 255, 0.1) 100%);
+  z-index: -1;
+  transition: transform 1.2s ease;
+  transform: skewX(-20deg);
+}
+
+.nav-links li.wavy-item a:hover::before {
+  transform: translateX(100%) skewX(-20deg);
+}
+
+/* Red hover effect */
+.nav-links li.wavy-item a:hover {
+  background: linear-gradient(135deg, #FF0000, #B22222);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-links li.wavy-item a {
+    display: inline-block;
+    margin: 5px 15px;
+    text-align: center;
+  }
+}
+
 .hamburger {
     display: none;
     cursor: pointer;
