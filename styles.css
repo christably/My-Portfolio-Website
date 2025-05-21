@@ -71,8 +71,8 @@ ul {
 }
 
 .primary-btn {
-    background-color: green;
-    color: blue;
+    background-color: var(--primary-color);
+    color: white;
 }
 
 .primary-btn:hover {
