@@ -59,11 +59,6 @@ ul {
     transform: translateX(-50%);
 }
 
-
-
-/* Glass-like 3D Button Styles */
-
-/* Base button style with glass effect */
 .btn {
     display: inline-block;
     padding: 12px 28px;
@@ -81,7 +76,6 @@ ul {
     box-shadow: 0 8px 20px rgba(108, 99, 255, 0.2);
 }
 
-/* Primary button with glass effect */
 .primary-btn {
     background-color: violet;
     color: white !important;
@@ -89,7 +83,7 @@ ul {
 }
 
 .primary-btn:hover {
-    background-color: yellow;
+    background-color: #e85caa;
     transform: translateY(-5px);
     box-shadow: 0 15px 25px rgba(108, 99, 255, 0.3), 
                 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -102,13 +96,13 @@ ul {
 
 /* Secondary button with glass effect */
 .secondary-btn {
-    background-color: violet;
+    background-color: red;
     border: 2px solid rgba(108, 99, 255, 0.6);
     color: white !important;
 }
 
 .secondary-btn:hover {
-    background-color: yellow;
+    background-color: #e85caa;
     color: white !important;
     border-color: rgba(108, 99, 255, 0.8);
     transform: translateY(-5px);
