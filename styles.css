@@ -94,18 +94,11 @@ ul {
     box-shadow: 0 8px 15px rgba(108, 99, 255, 0.2);
 }
 
-/* Secondary button with glass effect
+/* Secondary button with glass effect */
 .secondary-btn {
     background-color: transparent;
-    border: 2px solid rgba(108, 99, 255, 0.6);
-    color: black;
-}
-*/
-
-.secondary-btn {
-    background-color: transparent;
-    border: pink;
-    color: hotPink;
+    border: 2px solid rgba(232, 92, 170, 0.6);
+    color: #ff4fb2;
 }
 
 .secondary-btn:hover {
@@ -261,7 +254,6 @@ nav {
     padding: 20px 0;
 }
 
-/*
 .logo {
     font-size: 2rem;
     font-weight: 700;
@@ -275,25 +267,6 @@ nav {
     justify-content: center;
     font-family: 'Pacifico', cursive;
     line-height: 1.2;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    margin-left: 15px;
-}
-*/
-
-
-.logo {
-    font-size: 2rem;
-    font-weight: 700;
-    color: pink;
-    background-color: var(--light-gray);
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Pacifico', cursive; /* Stylish cursive font */
-    line-height: 1.2; /* Adjusted line height */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
     margin-left: 15px;
 }
