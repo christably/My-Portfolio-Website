@@ -59,6 +59,7 @@ ul {
     transform: translateX(-50%);
 }
 
+/*
 .btn {
     display: inline-block;
     padding: 12px 25px;
@@ -87,6 +88,26 @@ ul {
     background-color: var(--primary-color);
     color: white;
 }
+*/
+
+.primary-btn:hover {
+    background-color: #4a45b2;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    border: 2px solid #6c63ff;
+    color: #6c63ff !important; /* Force colored text */
+}
+
+.secondary-btn:hover {
+    background-color: #6c63ff;
+    color: white !important; /* Force white text on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
 
 .sm-btn {
     padding: 8px 15px;
@@ -98,6 +119,18 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+}
+
+.hero-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Ensure buttons have proper dimensions */
+.hero-btns .btn {
+    min-width: 140px;
 }
 
 .profile-img-placeholder {
